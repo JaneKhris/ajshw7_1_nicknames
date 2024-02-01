@@ -5,7 +5,7 @@ test.each([
   ['user@', false],
   ['user1', false],
   ['_user', false],
-  ['user123name', false],
+  ['user1234name', false],
 ])('test validateUsername function', (username, expected) => {
   const val = new Validator();
   expect(val.validateUsername(username)).toBe(expected);
